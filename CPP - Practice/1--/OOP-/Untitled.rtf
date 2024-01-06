@@ -1,0 +1,506 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2580
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww25400\viewh14880\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 Object Oriented Programming Using C++\
+\
+- 	Object Oriented Programming (OOP) is a programming technique in which programmes are\
+	written on the basis of objects.\
+-	An object is a collection of data and functions.\
+-	Objects represent a person, place or thing in real world.\
+-	In pop data and all possible function on data are grouped together.\
+\
+______________________________________________________________________________\
+\
+-	Object Oriented Programming is a programming style that is associated with the concept of Class,\
+	Objects and various other concepts revolving around these two, like Inheritance, Polymorphism, \
+	Abstraction, Encapsulation etc.\
+-	Object oriented programming aims to implement real world entities like, inheritance, hiding, \
+	polymorphism etc in programming.\
+-	The main aim of OOP is to bind together the data and the functions that operate on them so that no\
+	other part of code can access this data except that function. \
+______________________________________________________________________________\
+\
+Classes in OOP\
+\
+-	A class is an entity that determines how an object will behave and what the object will contain.\
+-	In other words, it is a blueprint or a set of instruction to build a specific type of object.\
+-	The classes and objects are the most important features of c++.\
+-	A class is similar to structure but it provides a more advance feature.\
+\
+-	When you define a class you define a blueprint for a data type.\
+-	This doesn\'92t actually define any data but it does define what the class name means that is what an \
+	object of the class will consist of and what operations can be performed on such an object.\
+-	A class definition starts will the keyword class followed by the class name and the class bode, enclosed\
+	by curly braces.\
+-	A class definition must be followed either by a semicolon or a list fo declarations. \
+\
+______________________________________________________________________________\
+\
+Object in OOP\
+\
+-	This is the basic unit of object oriented programming.\
+-	That is both data and function that operate on data are bundled as a unit called as object.\
+\
+______________________________________________________________________________\
+\
+Class data and member function\
+\
+-	Access specifier label public and private\
+-	Function are public and data is private\
+-	Data is hidden so that is can be safe from accidental manipulation\
+-	Functions operate on data are public so they can be accessed from outside the class\
+\
+______________________________________________________________________________\
+\
+Member Functions\
+\
+-	Member functions are the functions that operate on the data encapsulated in the class\
+-	Public member function are the interface to the class\
+-	Define member function inside the class definition\
+Or\
+-	Define member function outside the class definition	\
+	-	But the must be declared inside the class definition\
+\
+______________________________________________________________________________\
+\
+Access Control or Access Specifiers in Classes\
+\
+-	Access specifiers in C++ class defines the access control rules.\
+-	C++ has 3 new keywords introduces, namely\
+\
+	1. Public\
+	2. Private\
+	3. Protected\
+\
+-	These access specifiers are used to set boundaries for availability of members of class be it data members \
+	or member functions.\
+-	Access specifiers in the programme, are followed by a colon.\
+-	You can use either one, two, or all 3 specifiers in the same class to set different boundaries for \
+	different class members\
+-	They change the boundary for all the declarations that follow them. \
+\
+______________________________________________________________________________\
+\
+Public\
+\
+-	Public, means all the class members declared under public will be available to everyone.\
+-	The data members and member functions declared public can be accessed by other classes too\
+-	Hence there are changes that they might change them.\
+-	So the key members must not be declared public.\
+______________________________________________________________________________\
+\
+Private\
+\
+-	Private keyword, means that no one can access the class members declared private outside that \
+	class.\
+-	If someone tries to access the private member, they will get a compiler time error.\
+-	By default class variables and member functions are private.\
+\
+______________________________________________________________________________\
+\
+Protected\
+\
+-	Protected is the last access specifier, and it is similar to private, it make class member \
+	inaccessible outside the class.\
+-	But they can be accessed by any other subclass of that class. (If class A is inherited by class B, \
+	then class B is subclass of class A. We will lean this later in inheritance Topic.)\
+\
+______________________________________________________________________________\
+\
+Constructor in C++\
+\
+-	C++ requires a construct call for each object it has created\
+-	Constructors are special class functions which perform initialisation of every object.\
+-	The compiler calls the constructor whenever an object is created\
+-	If there is no constructor, the compiler provides a default constructor that is a constructor \
+	with no parameters.\
+-	Constructor has the same name as the class\
+\
+______________________________________________________________________________\
+\
+-	First, constructor name must be the same as the name of the class\
+	* This is one way the compiler knows they are constructors.\
+-	Second, no return type is used for constructors\
+	*Why not? Since the constructor is called automatically by the system, there\'92s\
+	no programme for it to return anything to; a return value wouldn\'92t make sense\
+	* This is the second way the compiler know they are constructors.\
+\
+______________________________________________________________________________\
+\
+Types of Constructors\
+\
+Constructors are of three types:\
+1. Default constructors\
+2. Parameterised Constructor\
+3. Copy constructor\
+\
+______________________________________________________________________________\
+\
+Initialiser list:\
+\
+-	One of the most common tasks a constructor carries out is initialising data members\
+-	In the Test class the constructor must initialise the n member to 0;\
+-	The initialisation takes place following the member function declared by before the \
+	function body.\
+-	Initialisation in constructor\'92s function body\
+	Test()\{n=0\}\
+	this is not the preferred approach\
+______________________________________________________________________________\
+\
+-	It is preceded by a colon.  The value is place in parentheses following the member data\
+	Test():n=0\{\}\
+-	If multiple member must be initialised they\'92re separated by commas.\
+	-Test():n1(7),n2(8),n3(4)\{\}\
+\
+______________________________________________________________________________\
+\
+Constructor Properties\
+\
+-	Constructors have the same name as that of the class they belong to\
+-	Constructors are executed when an object is declared\
+-	Constructors have no return value no Void\
+-	The main function of constructor is to initialise object and allocate appropriate memory to objects\
+-	Though constructors executed implicitly they can be invoked explicitly\
+-	Constructors can have default values and can be overloaded\
+-	The constructor without arguments is called as default constructors.\
+\
+______________________________________________________________________________\
+\
+Destructor in C++\
+-	Destructor is a function called implicitly when an object is destroyed\
+-	The name of the destructor for a class is the tilde character(~) followed \
+	by the class name\
+-	No argument and no return type for a destructor\
+-	The most common use of destructor is to deallocate memory that was\
+	allocated for the object by the constructor.\
+\
+______________________________________________________________________________\
+\
+What is a Constructor?\
+\
+-	A constructor is a member function of a class which initialises objects of a class. In C++,\
+	constructor is automatically called when object(instance of class ) is created. It is a\
+	special member function of the class.\
+\
+How constructors are different from normal member functions?\
+	*A constructor is different from normal functions in following ways:\
+	* Constructor has same name as the class itself \
+	* Constructors don\'92t have return type\
+	* A constructor is automatically called when an object is created.\
+	* If we do not specify a constructor, C++ compiler generates a default constructor for us\
+	 (expects no parameters and has an empty body).\
+\
+______________________________________________________________________________\
+\
+Types of Constructors:\
+\
+1. Default constructor\
+-	Default constructor is the constructor which doesn\'92t take any argument. It has no parameters\
+\
+2. Parameterised Constructor\
+-	It is possible to pass arguments to constructors. Typically, these arguments help initialise \
+	an object when it is created. To create a parameterised constructor, simply add parameters \
+	to it the way you would to any other function. When you define the constructor\'92s body, \
+	use the parameters to initialise the object.\
+\
+3. Copy Constructor \
+-	A copy constructor is a member function which initialises an object using another object \
+	if the same class.\
+\
+______________________________________________________________________________\
+\
+What is Destructor?\
+\
+-	Destructor is a member function which destructs or deletes an object.\
+\
+When is destructor called?\
+-	The function ends.\
+-	The programme ends.\
+-	A block containing local variables ends.\
+-	A delete operator is called.\
+\
+How destructors are different from a normal member function?\
+-	Destructors have the same name as the class preceded by a tilde(~)\
+-	Destructors don\'92t take any argument and don\'92t have return anything (not even void)\
+\
+______________________________________________________________________________\
+\
+Can there be more than one destructor in a class?\
+\
+-	No, there can only be one destructor in a class with classname preceded by ~, no parameters \
+	and no return type.\
+\
+When do we need to write a user-defined destructor?\
+-	If we do not write our own destructor, compiler creates a default destructor for us. The default \
+	destructor works fine unless we have dynamically allocated memory or pointer in class.\
+	When a class contains a pointer to memory allocated in class, we should write a destructor to \
+	release memory before the class instance is destroyed. This must be done to avoid memory \
+	leak.\
+\
+______________________________________________________________________________\
+\
+Object as Function parameters in C++\
+\
+-	Object can also be passes as parameters to member function.\
+\
+-	The method of passing objects to a function a parameters is same as passing other\
+	simple variable.\
+\
+______________________________________________________________________________\
+\
+How to return an object from the function\
+\
+-	The method of returning an object from member function is same as returning a simple \
+	variable.\
+\
+\
+______________________________________________________________________________\
+\
+Constructor Overloading in C++\
+\
+-	The process of declaring multiple constructors with the same name but different parameters\
+	is known as constructor overloading.\
+	\
+-	The constructor with same name must differ in order of the following ways\
+	1.	Number of parameters\
+	2.	Type os parameters\
+	3.	Sequence of parameters\
+______________________________________________________________________________\
+\
+Default Copy Constructor \
+\
+-	A type of constructor that is used to initialise an object with another object of the same type \
+	is known as default copy constructor.\
+\
+______________________________________________________________________________\
+\
+Const Keyword\
+\
+-	Constant is something that doesn\'92t change.\
+-	In C and C++ we use the keyword const to make programme elements constant.\
+-	Const keyword can be used in many context in a C++ programme. Const keyword can be\
+	used with:\
+	\
+	1. Variables\
+	2. Class Data members\
+	3. Class Member functions\
+	4. Objects\
+\
+______________________________________________________________________________\
+\
+Constant Variables\
+\
+-	If you make any variable as constant, using const keyword, you cannot change its value.\
+-	Also the constant variable must be initialised while declared. \
+\
+______________________________________________________________________________\
+\
+Const class Data members\
+\
+-	These are data variables in class which are made const.\
+-	They are not initialised during declaration.\
+-	Their initialisation occur in the constructor.\
+\
+\
+______________________________________________________________________________\
+\
+Const Class Object\
+\
+-	When an object is declared or created with const, its data members can never be changed\
+	during object\'92s lifetime.\
+\
+	const class_name class\
+\
+\
+______________________________________________________________________________\
+\
+Const class member function\
+\
+-	A const member function never modifies data members in an object.\
+\
+return_type function name() const;\
+\
+______________________________________________________________________________\
+\
+Static \
+\
+-	In certain cases, only one copy of a variable can be shared by all objects of a class\
+-	A static data member is used\
+-	If a data item in a class is declared as static, only one such item is created for the entire\
+	class, no matter how many objects are created. \
+\
+-	A member static variable is visible only within the class, but its lifetime is the entire \
+	programme.\
+-	They seem like global variables\
+-	It continues to exist even if there are no objects of the class\
+-	A static data item is useful when all objects of the same class must share a common item\
+	of information.\
+\
+-	A function should be static if it only access static member of class\
+-	A call to a static function does not need an object as handler, it needs a class name\
+\
+______________________________________________________________________________\
+\
+Friend Function in OOP\
+\
+-	A friend function of a class is defined outside that class\'92 scope but it has the right to access\
+	all private and protected members of the class.\
+-	Even though the prototypes for fries functions appear in the class definition, friends are \
+	not member functions.\
+-	A friend can be a function, function template, or member function, or a class or class template, \
+	in which case the entire class and all of its members are friends. \
+-	To declare a function as a friend of a class, precede the function prototype in the class \
+	definition with the keyword friend\
+\
+	\
+\
+______________________________________________________________________________\
+\
+\
+\
+______________________________________________________________________________\
+\
+\
+\
+______________________________________________________________________________\
+\
+\
+\
+______________________________________________________________________________\
+\
+\
+\
+\
+______________________________________________________________________________\
+\
+\
+\
+______________________________________________________________________________\
+\
+\
+\
+______________________________________________________________________________\
+\
+\
+\
+______________________________________________________________________________\
+\
+\
+\
+______________________________________________________________________________\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+}
