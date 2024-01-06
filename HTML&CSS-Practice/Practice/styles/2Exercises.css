@@ -1,0 +1,162 @@
+
+
+.uber-request-button{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    opacity: 1;
+
+}
+
+.amazon-cart-button{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    background-color: rgb(255,216,20);
+    border: none;
+    padding: 5px 30px;
+    border-radius: 25px;
+    cursor: pointer;
+    opacity: 1;
+
+}
+
+.github-button{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    background-color: rgb(46,164,79);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    opacity: 1;
+}
+
+.bootstrap-getstrated-button{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    background-color: rgb(121,82,179);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    margin-right: 5px;
+    cursor: pointer;
+    opacity: 1;
+
+}
+
+.bootstrap-download-button{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    background-color: white;
+    color: rgb(108,117,125);
+    padding: 9px 15px;
+    border: 1px solid rgb(108,117,125);
+    border-radius: 4px;
+    cursor: pointer;
+    opacity: 1;
+
+
+}
+
+.linked-apply-button{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: rgb(10,102,194);
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 25px;
+    margin-right: 10px;
+    cursor: pointer;
+    opacity: 1;
+}
+
+
+.linked-save-button{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: white;
+    color: rgb(10,102,194);
+    border: 1px solid rgb(10,102,194);
+    padding: 12px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    opacity: 1;
+
+}
+
+.uber-request-button:hover,
+.amazon-cart-button:hover,
+.github-button:hover,
+.bootstrap-getstrated-button:hover,
+.bootstrap-download-button:hover,
+.linked-apply-button:hover,
+.linked-save-button:hover{
+    opacity: 0.75;
+    transition: 0.15s;
+}
+
+.uber-request-button:active,
+.amazon-cart-button:active,
+.github-button:active,
+.bootstrap-getstrated-button:active,
+.bootstrap-download-button:active,
+.linked-apply-button:active,
+.linked-save-button:active{
+    opacity: 0.5;
+    transition: 0.15s;
+}
+
+.back-to-amazon-link{
+    text-transform: capitalize;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(0,113,133);
+}
+
+.discount-price-tag{
+    color: rgb(0,118,0);
+    font-weight: bold;
+}
+
+.cart-button{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: black;
+    background-color: rgb(255,216,20);
+    border: none;
+    padding: 8px 20px;
+    border-radius: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    opacity: 1;
+}
+
+.buyNow-button{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: black;
+    background-color: rgb(255,164,28);
+    border: none;
+    padding: 8px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    opacity: 1;
+}
+
+.cart-button:hover,
+.buyNow-button:hover{
+    opacity: 0.75;
+
+}
+.cart-button:active,
+.buyNow-button:active{
+    opacity: 0.55;
+
+}

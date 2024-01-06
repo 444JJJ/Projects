@@ -1,0 +1,40 @@
+
+
+.div-a{
+    display: grid;
+    grid-template-columns: 200px 75px;
+}
+.div-a-1{
+    background-color: lightblue;
+}
+.div-a-2{
+    background-color: lightpink;
+}
+
+.div-b{
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 50px 1fr 75px;
+}
+.div-b-1{
+    background-color: lightblue;
+}
+.div-b-2{
+    background-color: lightpink;
+}
+.div-b-3{
+    background-color: lightblue;
+}
+
+
+.div-c{
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 10px;
+}
+
+.div-c-1{
+    background-color: lightpink;
+}

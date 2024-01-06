@@ -1,0 +1,70 @@
+
+
+.div-a{
+    display: flex;
+    flex-direction: row;
+}
+.div-a-1{
+    background-color: lightblue;
+    width: 200px;
+}
+.div-a-2{
+    background-color: lightpink;
+    width: 75px;
+}
+
+.div-b{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+}
+.div-b-1{
+    background-color: lightblue;
+    width: 50px;
+}
+.div-b-2{
+    background-color: lightpink;
+    flex: 1;
+}
+.div-b-3{
+    background-color: lightblue;
+    width: 75px;
+}
+
+
+.div-c{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 1px solid red;
+}
+.div-c-1{
+    background-color: lightpink;
+}
+
+
+.div-d{
+    margin-top: 20px;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    height: 50px;
+    
+}
+.div-d-1{
+    background-color: lightpink;
+}
+
+
+
+
+
+
+
+
+
+
+

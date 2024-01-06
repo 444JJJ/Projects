@@ -1,0 +1,55 @@
+
+
+.div-a{
+    display: flex;
+    flex-direction: row;
+}
+.div-a-1{
+    background-color: lightpink;
+    width: 100px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.div-a-2{
+    background-color: lightblue;
+    width: 200px;
+}
+
+.div-a-1i{
+
+    background-color: black;
+    color: white;
+    
+}
+
+.div-b{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+
+}
+.div-b-1{
+    background-color: lightpink;
+    width: 100px;
+    height: 60px;
+
+}
+.div-b-2{
+    background-color: lightblue;
+    width: 200px;
+    height: 60px;
+}
+
+.div-b-2ii{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.div-b-x{
+    background-color: black;
+    color: white;
+}
